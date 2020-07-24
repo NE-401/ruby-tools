@@ -49,4 +49,4 @@ if money<0
 	money=0
 end
 
-p "最小課金額 --> "+money.to_s+"円"
+p "課金額 --> "+money.to_s+"円"
