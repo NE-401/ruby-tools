@@ -35,10 +35,18 @@ array=[
 
 money=0
 array.each do |key,v1,v2|
-	req=(req_f_ps/v2).floor
+	if req_f_ps>=0
+		req=(req_f_ps/v2).floor
+	else
+		req=0
+	end
 	money+=req*v1
 	req_f_ps-=req*v2
 	p key+req.to_s+"個"
+end
+
+if money<0
+	money=0
 end
 
 p "最小課金額 --> "+money.to_s+"円"
