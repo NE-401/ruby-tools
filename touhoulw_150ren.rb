@@ -19,7 +19,7 @@ req_ps=(180*(rem_m/15000).floor)+(40*(((rem_m)%15000)/3000).ceil)
 p "賽銭用に必要な神結晶 --> "+req_ps.to_s
 
 req_ps_s=(500*(rem_s/50).floor)+(60*(((rem_s)%50)/5).ceil)
-p "ガチャ石用に必要な神結晶 --> "+req_ps_s.to_s
+p "封結晶用に必要な神結晶 --> "+req_ps_s.to_s
 
 req_f_ps=(req_ps+req_ps_s)-current_ps
 p "最終的に必要となる神結晶 --> "+req_f_ps.to_s
